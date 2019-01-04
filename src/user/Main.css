@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.left{
+    width: 150px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 20px;
+}
+
+.right{
+    margin-left: 200px;
+    margin-right: 150px;
+    text-align: center;
+}

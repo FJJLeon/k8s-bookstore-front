@@ -1,0 +1,14 @@
+.Sidebar {
+    width: 200px;
+    background: khaki;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.Catalog {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 30px;
+}

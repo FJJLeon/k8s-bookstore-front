@@ -1,0 +1,57 @@
+
+.Navbar {
+    background-color: #222;
+    height: 120px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.Nav-title {
+    font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; 
+    font-size:80px;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:4px;
+    color: #52a2c2;
+    padding: 0 60px;
+}
+
+.Book-logo {
+    height: 100px;
+}
+
+.button {
+    display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: right;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .9em 5em .9em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.login-button {
+    float: right;
+    width: 80px;
+    height: 40px;
+    margin: 0 2px;
+    padding: 1px 10px;
+    color: #d9eef7;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}

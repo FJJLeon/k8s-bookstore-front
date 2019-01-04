@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    background-color: #fbfbfb;
+  }
+  
+  .wrapper {
+    width: 500px;
+    margin: 10px auto;
+    margin-top: 80px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+  }
+  
+
+  /* 登陆框样式 */
+  .user-input {
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .user-field {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .user-field .user-field-name {
+    display: flex;
+    flex-basis: 100px;
+    font-size: 14px;
+  }
+  
+  .user-field .user-field-input {
+    display: flex;
+    flex: 1;
+  }
+  
+  .user-field-input input,
+  .user-field-input textarea {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+    resize: none;
+    flex: 1;
+  }
+  
+  .user-field-input textarea {
+    height: 100px;
+  }
+
+  .user-field-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .user-field-button button {
+    padding: 5px 10px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    background-color: #00a3cf;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .user-field-button button:active {
+    background: #13c1f1;
+  }
+  
+  /* 登陆列表样式 */
+  .user-list {
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* 登陆组件样式 */
+  .user {
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    min-height: 50px;
+  }
+  
+  .user .user-user {
+    flex-shrink: 0;
+  }
+  
+  .user span {
+    color: #00a3cf;
+    font-style: italic;
+  }
+  
+  .user p {
+    margin: 0;
+    /*text-indent: 2em;*/
+  }
+  
