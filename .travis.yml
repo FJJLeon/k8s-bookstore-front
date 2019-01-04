@@ -5,7 +5,24 @@ node_js:
 cache:
   directories:
     - node_modules
+env:
+  global:
+    - REGISTRY_USER=fjjleonrobot
+    - REGISTRY_PWD=fangjunjie1998
+
+before_script:
+  - docker build --tag fjjleon/bookstore-front .
+  - docker run fjjleon/bookstore-front
 
 script:
   - npm install
   - CI=false npm run build
+
+before_deploy:
+  - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PWD"
+
+deploy:
+  provider: script
+  script: docker push fjjleon/bookstore-front
+  on:
+    branch: master
