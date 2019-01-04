@@ -10,14 +10,17 @@ env:
     - REGISTRY_USER=fjjleonrobot
     - REGISTRY_PWD=fangjunjie1998
 
+install:
+  - npm install
+  - CI=false npm run build
+
 before_script:
   - docker build --tag fjjleon/bookstore-front .
   - docker run fjjleon/bookstore-front
 
 script:
-  - npm install
-  - CI=false npm run build
-
+  - docker images
+  
 before_deploy:
   - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PWD"
 
