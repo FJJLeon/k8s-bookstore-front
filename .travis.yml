@@ -20,10 +20,11 @@ before_script:
 
 script:
   - docker images
-  
+
 before_deploy:
   - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PWD"
-
+  - git checkout package-lock.json
+  
 deploy:
   provider: script
   script: docker push fjjleon/bookstore-front
