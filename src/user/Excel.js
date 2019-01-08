@@ -54,7 +54,7 @@ class Excel extends Component {
     }
 
     _getBooks(event) {	          
-        this.serverRequest = $.get("/MybkServlet/BookManager",function(data){
+        this.serverRequest = $.get("http://212.129.139.54:32002/MybkServlet/BookManager",function(data){
            this.setState({
               data: JSON.parse(data),
            });
