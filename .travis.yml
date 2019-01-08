@@ -16,7 +16,6 @@ install:
 
 before_script:
   - docker build --tag fjjleon/bookstore-front .
-  - docker run fjjleon/bookstore-front
 
 script:
   - docker images
