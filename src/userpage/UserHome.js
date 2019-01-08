@@ -33,7 +33,7 @@ class UserHome extends Component {
 
 
 	handleUserOrder() {
-		this.serverRequest = $.post("/UserQueryOrder",{userName:this.state.userName},function(data){
+		this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/UserQueryOrder",{userName:this.state.userName},function(data){
             console.log(data),
             alert(data)
         }.bind(this));
@@ -41,7 +41,7 @@ class UserHome extends Component {
 
 
 	handleModifyView() {
-		this.serverRequest = $.post("/UserQueryUser",{userName:this.state.userName},function(user){
+		this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/UserQueryUser",{userName:this.state.userName},function(user){
             console.log(user),
             //alert(user),
            	this.setState({
