@@ -55,7 +55,7 @@ class Cart extends Component {
             return alert("login name sth wrong");
 
         console.log("current user:"+Cname);
-        this.serverRequest = $.post("/MybkServlet/submitOrder",
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/submitOrder",
             {
                 Cname: Cname,
                 cart: jsonCart

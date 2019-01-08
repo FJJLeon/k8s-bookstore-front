@@ -42,7 +42,7 @@ class Admin extends Component {
     }
 
     handleQueryUser () {
-        this.serverRequest = $.post("/MybkServlet/queryUser",{username:this.state.account},function(data){
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/queryUser",{username:this.state.account},function(data){
             console.log(data),
             this.setState({ userinfo : data});
             //alert(data)
@@ -54,7 +54,7 @@ class Admin extends Component {
     }
 
     handleQueryBook () {
-        this.serverRequest = $.post("/MybkServlet/queryBook",{title:this.state.title},function(data){
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/queryBook",{title:this.state.title},function(data){
             console.log(data),
             //alert(data)
             this.setState({ bookinfo : data});
@@ -67,14 +67,14 @@ class Admin extends Component {
     }
 
     handleBan() {
-        this.serverRequest = $.post("/MybkServlet/banUser",{username:this.state.account},function(data){
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/banUser",{username:this.state.account},function(data){
             console.log(data),
             alert(data)
         }.bind(this)); 
     }
 
     submitStock() {
-        this.serverRequest = $.post("/MybkServlet/addStock",{title:this.state.title, addStock:this.state.addStock},function(data){
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/addStock",{title:this.state.title, addStock:this.state.addStock},function(data){
             console.log(data),
             alert(data)
         }.bind(this)); 

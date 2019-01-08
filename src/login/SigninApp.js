@@ -63,7 +63,7 @@ class SigninApp extends Component {
                     " phone:"+signin.phonenumber+
                     " email:"+signin.emailaddress+
                     " pwd:"+signin.sign_password)
-        this.serverRequest = $.post("/MybkServlet/register",
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/register",
             {
                 username:signin.sign_account, 
                 phone:signin.phonenumber,

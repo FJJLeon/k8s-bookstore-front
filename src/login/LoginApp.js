@@ -43,7 +43,7 @@ class LoginApp extends Component {
         this._saveLogin(login)
 
         /* back end servlet */ 
-        this.serverRequest = $.post("/MybkServlet/checkuser",{name:login.account, pwd:login.password},function(data){
+        this.serverRequest = $.post("http://212.129.139.54:32002/Mybk-iteration3/MybkServlet/checkuser",{name:login.account, pwd:login.password},function(data){
             console.log(data),
             this.setState({
                isValid: JSON.parse(data),
